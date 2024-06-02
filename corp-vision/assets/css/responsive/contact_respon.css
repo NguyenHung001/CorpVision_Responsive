@@ -1,0 +1,77 @@
+@media screen and (max-width: 1980px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 1240px) {
+      .container {
+        max-width: 960px;
+      }
+     
+  }
+  @media screen and (max-width: 990px) {
+      .container {
+          max-width: 720px;
+        }
+        .page-ct-content .title p {
+          margin: 0;
+        }
+        .page-ct-content .ct-info {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+          margin: 50px 0;
+      }
+      form {
+        padding: 0;
+      }
+  }
+  @media screen and (max-width: 768px) {
+      .container {
+          width: 100%;
+          padding: 0 20px;
+        }
+        .page-ct-content .ct-info {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+          margin: 50px 0;
+      }
+      .page-ct-content .title p {
+        margin-top: 15px;
+      }
+    
+  }
+  @media screen and (max-width: 576px) {
+      .container {
+          max-width: 95%;
+          margin: 0 auto;
+        }
+      
+    
+  }
+  @media screen and (max-width: 480px) {
+      .container {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .title-big {
+          font-size: 30px;
+        }
+        form .your-info {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+          margin-bottom: 30px;
+      }
+      .page-banner .title h3 {
+        font-size: 40px;
+      }
+
+  }

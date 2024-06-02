@@ -1,0 +1,101 @@
+.page-ct-content {
+    background-color: var(--color-bg-dark);
+    padding: 100px 0;
+}
+.page-ct-content .title {
+    text-align: center;
+}
+.page-ct-content .title p {
+    margin: 0 200px;
+    margin-top: 15px;
+}
+.page-ct-content .ct-info {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+.page-ct-content .ct-info .item {
+    border-radius: 10px;
+    padding: 25px 35px;
+    background-color: var(--color-bg-light);
+    display: flex;
+    gap: 20px;
+}
+.page-ct-content .ct-info .item i {
+    color: var(--color-title);
+    font-size: 35px;
+    margin-top: 10px;
+}
+.page-ct-content .ct-info .item h3 {
+    color: var(--color-title);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.page-ct-content .ct-info .item p {
+    font-size: 16px;
+}
+.page-ct-content .map iframe {
+    width: 100%;
+    margin-bottom: 100px;
+}
+form {
+    padding: 0 100px;
+    margin-top: 50px;
+}
+form .your-info {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+form .your-info input {
+    background-color: var(--color-bg-light);
+    padding: 20px 30px;
+    color: var(--color-title);
+    border: 1px solid var(--color-boder);
+    border-radius: 10px;
+    outline: 2px solid var(--color-bg-light);
+    transition: .3s ease;
+    width: 100%;
+}
+form .your-info input:focus {
+    outline: 2px solid var(--main-color);
+
+}
+form .your-info input::placeholder {
+    font-size: 18px;
+}
+form textarea {
+    width: 100%;
+    background-color: var(--color-bg-light);
+    outline: 2px solid var(--color-bg-light);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: var(--color-title);
+    transition: .3s ease;
+}
+form textarea:focus {
+    outline: 2px solid var(--main-color);
+
+}
+form .ct-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+form .ct-btn button {
+    padding: 15px 40px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+    border: none;
+}
+form .ct-btn button:hover {
+    opacity: .8;
+}

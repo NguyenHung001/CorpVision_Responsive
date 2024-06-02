@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corp Vision</title>
+
+    <!-- LINK FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FONT JOST GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SLICK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./assets/css/utilities/variable.css" />
+    <link rel="stylesheet" href="./assets/css/utilities/reset.css" />
+    <link rel="stylesheet" href="./assets/css/utilities/share.css" />
+    <link rel="stylesheet" href="./assets/css/layouts/header.css">
+    <link rel="stylesheet" href="./assets/css/layouts/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/home_respon.css">
+    <link rel="stylesheet" href="./assets/css/responsive/header_respon.css">
+    <link rel="stylesheet" href="./assets/css/responsive/footer_respon.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header-placeholder"></header>
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="bn-list">
+        <div class="bn-overlay"></div>
+        <div class="shape">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+            <path fill-opacity="1">
+              <animate
+                attributeName="d"
+                dur="20000ms"
+                repeatCount="indefinite"
+                values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                                     M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+              ></animate>
+            </path>
+          </svg>
+        </div>
+        <div class="btn-slide">
+          <a class="bn-prev" onclick="btnSlide(-1)">
+            <i class="fa-solid fa-angle-left"></i>
+        </a>
+          <a class="bn-next" onclick="btnSlide(1)">
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        </div>
+        <div class="bn-item fade">
+          <img src="./assets/imgs/slide/b1.jpg" alt=""/>
+          <div class="bn-wrapper">
+            <div class="container">
+              <div class="hot-content">
+                <h1 class="flipInX" style="animation-delay: 1s">
+                  We will solve your issues our vision to your future
+                </h1>
+                <p class="fadeInDown">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                  animi fugit fugiat reiciendis impedit.
+                </p>
+                <div
+                  class="bn-btn main-btn fadeInUp"
+                  style="animation-delay: 1s"
+                >
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bn-item fade">
+          <img src="./assets/imgs/slide/b2.jpg" alt="" />
+          <div class="bn-wrapper">
+            <div class="container">
+              <div class="hot-content">
+                <h1 class="fadeInDown" style="animation-delay: 1s">
+                  Digital transformation driven by technology
+                </h1>
+                <p class="fadeInDown">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                  animi fugit fugiat reiciendis impedit.
+                </p>
+                <div
+                  class="bn-btn main-btn fadeInDown"
+                  style="animation-delay: 1s"
+                >
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bn-item fade">
+          <img src="./assets/imgs/slide/b3.jpg" alt="" />
+          <div class="bn-wrapper">
+            <div class="container">
+              <div class="hot-content">
+                <h1 class="fadeInUp" style="animation-delay: 1s">
+                  For those who believe in leaving a mark
+                </h1>
+                <p class="fadeInUp">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                  animi fugit fugiat reiciendis impedit.
+                </p>
+                <div
+                  class="bn-btn main-btn fadeInDown"
+                  style="animation-delay: 1s"
+                >
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bn-item fade">
+          <img src="./assets/imgs/slide/b4.jpg" alt="" />
+          <div class="bn-wrapper">
+            <div class="container">
+              <div class="hot-content">
+                <h1 class="fadeInDown" style="animation-delay: 1s">
+                  Embracing success do our best, need best advice
+                </h1>
+                <p class="fadeInRight">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                  animi fugit fugiat reiciendis impedit.
+                </p>
+                <div
+                  class="bn-btn main-btn fadeInUp"
+                  style="animation-delay: 1s"
+                >
+                  <a href="">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US -->
+    <section class="about">
+      <div class="container">
+        <div class="about-left">
+          <div class="title">
+            <p class="title-small">ABOUT US</p>
+            <p class="title-big">We make the best strategies for you, Enhancing your success</p>
+          </div>
+          <div class="about-content">
+            <p class="text-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.
+            </p>
+          </div>
+          <div class="about-list">
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>UI/UX Design and Development</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Branding Design and Identity</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span> Mobile App Design and Development</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-img">
+            <div class="img-left">
+              <img src="./assets/imgs/about1.jpg" alt="">
+            </div>
+            <div class="img-right">
+              <img src="./assets/imgs/about2.jpg" alt="">
+              <img src="./assets/imgs/about3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURE -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-left">
+          <div class="title">
+            <p class="title-small">EVERY DAY BRINGS NEW CHALLENGES</p>
+            <p class="title-big">Creative agency focused on vision, product and people</p>
+          </div>
+          <div class="feature-content">
+            <p class="text-content">
+              Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.
+            </p>
+          </div>
+          <div class="feature-btn main-btn">
+            <a href="">Discover More</a>
+          </div>
+          </div>
+        <div class="feature-right">
+            <div class="feature-box">
+              <div class="fea-item">
+                <img src="./assets/imgs/fea1.png" alt="">
+                <span>Our Process</span>
+              </div>
+              <div class="fea-item">
+                <img src="./assets/imgs/fea2.png" alt="">
+                <span>How We Help</span>
+              </div>
+              <div class="fea-item">
+                <img src="./assets/imgs/fea3.png" alt="">
+                <span>UI/UX Design</span>
+              </div>
+              <div class="fea-item">
+                <img src="./assets/imgs/fea4.png" alt="">
+                <span>Creative Ideas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICE -->
+    <section class="service">
+      <div class="container">
+        <div class="ser-title">
+          <p class="title-big">Always there for your care, our Services</p>
+        </div>
+        <div class="ser-content">
+          <div class="ser-item">
+            <div class="ser-img">
+              <img src="./assets/imgs/ser1.jpg" alt="">
+              <a href="" class="ser-name">Work Expertise</a>
+            </div>
+            <div class="ser-text">
+              <p class="text-content">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.</p>
+              <div class="ser-link">
+                <a href="">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="ser-item">
+            <div class="ser-img">
+              <img src="./assets/imgs/ser2.jpg" alt="">
+              <a href="" class="ser-name">Product Development</a>
+            </div>
+            <div class="ser-text">
+              <p class="text-content">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.</p>
+              <div class="ser-link">
+                <a href="">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="ser-item">
+            <div class="ser-img">
+              <img src="./assets/imgs/ser3.jpg" alt="">
+              <a href="" class="ser-name">Software Development</a>
+            </div>
+            <div class="ser-text">
+              <p class="text-content">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.</p>
+              <div class="ser-link">
+                <a href="">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="project">
+      <div class="container">
+        <div class="pj-title">
+          <p class="title-small">OUR GALLERY</p>
+          <p class="title-big">Successful projects we've done</p>
+        </div>
+        <div class="pj-list">
+          <div class="pj-item">
+            <div class="pj-overlay"></div>
+            <div class="pj-content">
+              <p class="pj-name">Project 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="./assets/imgs/pj1.jpg" alt="">
+          </div>
+          <div class="pj-item">
+            <div class="pj-overlay"></div>
+            <div class="pj-content">
+              <p class="pj-name">Project 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="./assets/imgs/pj2.jpg" alt="">
+          </div>
+          <div class="pj-item">
+            <div class="pj-overlay"></div>
+            <div class="pj-content">
+              <p class="pj-name">Project 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="./assets/imgs/pj3.jpg" alt="">
+          </div>
+          <div class="pj-item">
+            <div class="pj-overlay"></div>
+            <div class="pj-content">
+              <p class="pj-name">Project 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="./assets/imgs/pj4.jpg" alt="">
+          </div>
+          <div class="pj-item">
+            <div class="pj-overlay"></div>
+            <div class="pj-content">
+              <p class="pj-name">Project 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="./assets/imgs/pj5.jpg" alt="">
+          </div>
+          <div class="pj-item">
+            <div class="pj-overlay"></div>
+            <div class="pj-content">
+              <p class="pj-name">Project 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="./assets/imgs/pj6.jpg" alt="">
+          </div>
+        </div>
+        <div class="pj-company-logo">
+          <div>
+          <img src="./assets/imgs/brand1.png" alt="">
+          </div>
+          <div>
+          <img src="./assets/imgs/brand2.png" alt="">
+          </div>
+          <div>
+          <img src="./assets/imgs/brand3.png" alt="">
+          </div>
+          <div>
+          <img src="./assets/imgs/brand4.png" alt="">
+          </div>
+          <div>
+          <img src="./assets/imgs/brand5.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROGRESS -->
+    <section class="progress">
+      <div class="container">
+        <div class="pg-left">
+          <img src="./assets/imgs/progress.jpg" alt="">
+        </div>
+        <div class="pg-right">
+          <div class="pg-title">
+            <p class="title-small">YOUR SUCCESS IS OUR SUCCESS</p>
+            <div class="title-big">Web design, marketing & SEO solutions that get results</div>
+          </div>
+          <div class="pg-info">
+            <div class="pg-item">
+              <div class="pg-name">
+                <span>Marketing</span>
+                <span>80%</span>
+              </div>
+              <div class="pg-bar">
+                <div class="pg-ratio"></div>
+              </div>
+            </div>
+            <div class="pg-item">
+              <div class="pg-name">
+                <span>Responsive Web design</span>
+                <span>95%</span>
+              </div>
+              <div class="pg-bar">
+                <div class="pg-ratio"></div>
+              </div>
+            </div>
+            <div class="pg-item">
+              <div class="pg-name">
+                <span>Analytics</span>
+                <span>60%</span>
+              </div>
+              <div class="pg-bar">
+                <div class="pg-ratio"></div>
+              </div>
+            </div>
+            <div class="pg-item">
+              <div class="pg-name">
+                <span>Web Development</span>
+                <span>85%</span>
+              </div>
+              <div class="pg-bar">
+                <div class="pg-ratio"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CUSTOMERS -->
+    <div class="customer">
+      <div class="container">
+        <div class="cus-title">
+          <p class="title-small">HAPPY CLIENTS FEEDBACK</p>
+          <p class="title-big">Reviews and Testimonials</p>
+        </div>
+        <div class="cus-list single-item">
+          <div class="cus-item">
+            <blockquote>
+              <q class="text-content">
+                Lorem ipsum dolor sit amet elit. Velit beata laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur  adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </q>
+            </blockquote>
+            <div class="cus-info">
+              <div class="cus-avt">
+                <img src="./assets/imgs/avt1.jpg" alt="">
+              </div>
+              <div class="cus-peopl">
+                <p class="name">Julia sakura</p>
+                <p class="job text-content">Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="cus-item">
+            <blockquote>
+              <q class="text-content">
+                Lorem ipsum dolor sit amet elit. Velit beata laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur  adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </q>
+            </blockquote>
+            <div class="cus-info">
+              <div class="cus-avt">
+                <img src="./assets/imgs/avt2.jpg" alt="">
+              </div>
+              <div class="cus-peopl">
+                <p class="name">Julia sakura</p>
+                <p class="job text-content">Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="cus-item">
+            <blockquote>
+              <q class="text-content">
+                Lorem ipsum dolor sit amet elit. Velit beata laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur  adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </q>
+            </blockquote>
+            <div class="cus-info">
+              <div class="cus-avt">
+                <img src="./assets/imgs/avt3.jpg" alt="">
+              </div>
+              <div class="cus-peopl">
+                <p class="name">Roy Linderson</p>
+                <p class="job text-content">Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="cus-item">
+            <blockquote>
+              <q class="text-content">
+                Lorem ipsum dolor sit amet elit. Velit beata laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur  adipisicing elit. Esse architecto est ea sunt eligendi cum?
+              </q>
+            </blockquote>
+            <div class="cus-info">
+              <div class="cus-avt">
+                <img src="./assets/imgs/avt4.jpg" alt="">
+              </div>
+              <div class="cus-peopl">
+                <p class="name">Smith Johnson</p>
+                <p class="job text-content">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BLOG -->
+    <section class="blog">
+      <div class="container">
+        <div class="blog-title">
+          <p class="title-small">LATEST NEWS</p>
+          <p class="title-big">Our insight and articles</p>
+        </div>
+        <div class="blog-content">
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="./assets/imgs/blog1.jpg" alt="">
+            </div>
+            <div class="blog-detail">
+              <p class="text-content">Startup Business</p>
+              <a href="" class="blog-desc">Business opportunity in developing a reliable electric motor. </a>
+            </div>
+            <div class="blog-card">
+              <div class="author">
+                <img src="./assets/imgs/avt1.jpg" alt="">
+              </div>
+              <div class="meta">
+                <span class="text-content">by</span>
+                <a href=""> Jessica</a>
+              </div>
+              <div class="date">
+                <p class="text-content">20 March, 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="./assets/imgs/blog2.jpg" alt="">
+            </div>
+            <div class="blog-detail">
+              <p class="text-content">Marketing Strategy</p>
+              <a href="" class="blog-desc">The fledgling company builds its business around AC motors</a>
+            </div>
+            <div class="blog-card">
+              <div class="author">
+                <img src="./assets/imgs/avt2.jpg" alt="">
+              </div>
+              <div class="meta">
+                <span class="text-content">by</span>
+                <a href=""> Elizabeth</a>
+              </div>
+              <div class="date">
+                <p class="text-content">20 March, 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="./assets/imgs/blog3.jpg" alt="">
+            </div>
+            <div class="blog-detail">
+              <p class="text-content">Web Development</p>
+              <a href="" class="blog-desc">How to start a profitable home-based business within mins? </a>
+            </div>
+            <div class="blog-card">
+              <div class="author">
+                <img src="./assets/imgs/avt3.jpg" alt="">
+              </div>
+              <div class="meta">
+                <span class="text-content">by</span>
+                <a href=""> Charlotte</a>
+              </div>
+              <div class="date">
+                <p class="text-content">20 March, 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <div class="contact">
+      <div class="container">
+        <div class="ct-title">
+          <p class="title-big">Let’s find out how to work together</p>
+          <p class="text-content">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
+        </div>
+        <form action="">
+          <div class="form-icon">
+            <i class="fa-solid fa-paper-plane"></i>
+          <input type="email" placeholder="Your Email Adress">
+          </div>
+          <div class="form-btn">
+            <button>Subscibe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer-placehoder"></footer>
+    <!-- BACKTOTOP -->
+    <div class="backtotop">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- JQUERY -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- SLICK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MAIN -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

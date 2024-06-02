@@ -1,0 +1,95 @@
+@media screen and (max-width: 1980px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 1240px) {
+      .container {
+        max-width: 960px;
+      }
+      .page-ser-work .title-big,
+      .page-ser-solutions .title-big {
+        padding: 0 50px;
+      }
+     
+  }
+  @media screen and (max-width: 990px) {
+      .container {
+          max-width: 720px;
+        }
+        .page-ser-work .work-content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .page-ser-work .work-content .item h3 {
+            margin: 10px;
+        }
+        .page-ser-ser .ser-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .page-ser-quote-info .container {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .page-ser-quote-info .quote {
+            width: 100%;
+        }
+        .page-ser-quote-info .your-info {
+            width: 100%;
+        }
+        .page-ser-quote-info {
+            height: 1300px;
+        }
+        .page-ser-solutions .solu-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+  }
+  @media screen and (max-width: 768px) {
+      .container {
+          width: 100%;
+          padding: 0 20px;
+        }
+  }
+  @media screen and (max-width: 576px) {
+      .container {
+          max-width: 95%;
+          margin: 0 auto;
+        }
+        .page-ser-work .title-big, .page-ser-solutions .title-big {
+            padding: 0;
+            font-size: 30px;
+        }
+        .page-ser-ser .ser-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        }
+        .page-ser-solutions .solu-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        }
+  }
+  @media screen and (max-width: 480px) {
+      .container {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .page-banner .title h3 {
+            font-size: 40px;
+        }
+
+  }

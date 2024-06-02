@@ -1,0 +1,275 @@
+@media screen and (max-width: 1980px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  .slick-next,
+  .slick-prev {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 960px;
+  }
+  .bn-wrapper .hot-content h1 {
+    font-size: 55px;
+  }
+  .feature-right .fea-item {
+    width: 220px;
+    height: 200px;
+  }
+  .ser-content .ser-img .ser-name {
+    font-size: 19px;
+    padding: 10px 25px;
+  }
+  .service .text-content {
+    padding: 0 16px;
+    letter-spacing: normal;
+  }
+  .pg-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-big {
+    font-size: 30px;
+  }
+  .pg-right .pg-item {
+    margin-top: 20px;
+  }
+  .pg-right .pg-name {
+    margin-bottom: 8px;
+  }
+  .pj-company-logo {
+    padding: 0 10px;
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .container {
+    max-width: 720px;
+  }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-right {
+    width: 100%;
+  }
+  .feature .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-left {
+    width: 100%;
+  }
+  .feature-right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .feature-right .feature-box {
+    width: 100%;
+  }
+  .feature-right .fea-item {
+    width: 100%;
+    height: 200px;
+  }
+  .ser-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .ser-content .ser-item {
+    width: 100%;
+    margin: 0;
+  }
+  .ser-content .ser-item {
+    margin-top: 20px;
+  }
+  .pj-company-logo {
+    padding: 50px 0;
+    gap: 35px;
+    padding-bottom: 0;
+  }
+  .pj-company-logo > div {
+    margin: 0;
+  }
+  .progress .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
+  .cus-item blockquote {
+    padding: 0 50px;
+  }
+  .blog-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .ct-title {
+    width: auto;
+  }
+  .contact form {
+    width: auto;
+  }
+  .pj-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .cus-item blockquote {
+    padding: 0 20px;
+  }
+  .contact .container {
+    padding: 0 20px;
+  }
+  .banner {
+    height: calc(100vh - 200px);
+  }
+  .bn-wrapper .hot-content h1 {
+    font-size: 45px;
+  }
+  .about-right {
+    margin-top: 30px;
+  }
+  .ser-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .ser-content .ser-img .ser-name {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+  .pj-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .pj-item {
+    height: auto;
+  }
+  .pj-company-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .blog-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .bn-wrapper .hot-content h1 {
+    font-size: 40px;
+  }
+  .bn-wrapper .hot-content p {
+    font-size: 17px;
+  }
+  .title-big {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .fea-item img {
+    width: 50px;
+  }
+  .feature-right .fea-item span {
+    font-size: 18px;
+  }
+  .feature-right .fea-item {
+    height: 150px;
+  }
+  .pg-right {
+    margin: 0;
+  }
+  .contact .container {
+    padding: 0 10px;
+  }
+  .cus-item blockquote {
+    padding: 0;
+  }
+  .banner {
+    height: calc(100vh - 300px);
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .main-btn a {
+    padding: 10px 30px;
+  }
+  .bn-wrapper .hot-content .main-btn {
+    margin-top: 30px;
+  }
+  .banner {
+    height: calc(100vh - 380px);
+  }
+  .bn-wrapper .hot-content h1 {
+    font-size: 35px;
+  }
+  .btn-slide {
+    padding: 0;
+  }
+  .btn-slide i {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+  .about_us .row ul li span {
+    font-size: 16px;
+  }
+  .feature-right .feature-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .ser-content .ser-img .ser-name {
+    font-size: 17px;
+    padding: 10px 30px;
+  }
+  .pj-company-logo {
+    gap: 25px;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact form button {
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-top: 10px;
+  }
+  .btn-slide {
+    bottom: 0;
+  }
+
+  .pg-right .pg-name {
+    font-size: 15px;
+  }
+}

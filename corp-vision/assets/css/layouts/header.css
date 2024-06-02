@@ -1,0 +1,130 @@
+/* HEADER */
+header.sticky {
+    background-color: var(--color-bg-light);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.141);
+  }
+  header.sticky .container {
+    padding: 18px 0;
+    transition: all 0.4s ease-in-out;
+  }
+  header.sticky  .hd-actions i:nth-child(2) {
+    color: var(--color-title);
+  }
+  header.sticky .hd-menu li a {
+    color: var(--color-title);
+  }
+  header .container {
+    padding: 35px 0;
+    transition: all 0.4s ease-in-out;
+  }
+  header {
+    position: fixed;
+    z-index: 111111;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .hd-list-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .hd-logo .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .hd-logo .logo span ,
+  header .hd-logo .brand {
+    color: #fff;
+  }
+  header.sticky .hd-logo .logo span ,
+  header.sticky .hd-logo .brand {
+    color: var(--color-title);
+  }
+  .hd-logo .logo span {
+    color: var(--color-title);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .hd-logo .logo i {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 900;
+    margin-right: 10px;
+  }
+  .hd-logo .brand {
+    text-align: center;
+    color: var(--color-title);
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
+    line-height: 1;
+    margin-top: 3px;
+  }
+  .hd-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hd-actions i {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .hd-actions i:first-child,
+  .hd-actions i:last-child {
+    color: #fff;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hd-actions i:last-child {
+    border-radius: 8px;
+  }
+  .hd-actions  i.fa-bars {
+    display: none;
+  }
+  .hd-actions i:nth-child(2) {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hd-menu li a {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+  }
+  .hd-menu li a:hover {
+    opacity: 1;
+    color: var(--main-color);
+  }
+ a.active {
+  color: var(--main-color) !important;
+  font-weight: 800 !important;
+}

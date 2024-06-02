@@ -1,0 +1,17 @@
+:root {
+    --main-color: #009f4d;
+    --color-bg-light: #151421;
+    --color-bg-dark: #100f19;
+    --color-text-content: #c2c2c2;
+    --color-title: #eee;
+    --color-boder: rgba(255, 255, 255, 0.1);
+    --overlay: rgba(29, 42, 55, 0.8);
+}
+.theme-light {
+    --color-bg-light: #fff;
+    --color-bg-dark: #f7f7f7;
+    --color-text-content: #666;
+    --color-title: #3f3a64;
+    --color-boder: #e1e1e19b;
+    --overlay: rgba(29, 42, 55, 0.7);
+}

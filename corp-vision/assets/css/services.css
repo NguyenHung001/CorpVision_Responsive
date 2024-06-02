@@ -1,0 +1,230 @@
+.page-ser-work {
+    padding: 100px 0;
+    background-color: var(--color-bg-dark);
+    text-align: center;
+}
+.page-ser-work .title-big {
+    padding: 0 230px;
+}
+.page-ser-work .work-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.page-ser-work .work-content .item:first-child,
+.page-ser-work .work-content .item:last-child {
+    background-color: var(--color-bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px;
+}
+.page-ser-work .work-content .item .text-content {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.page-ser-work .work-content .item h3 {
+    color: var(--color-title);
+    font-size: 28px;
+    font-weight: 600;
+}
+.page-ser-work .work-content .item .icon img { 
+    width: 50px;
+}
+.page-ser-work .work-content .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SERVICES */
+.page-ser-ser {
+    padding: 100px 0;
+    background-color: var(--color-bg-light);
+}
+.page-ser-ser .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.page-ser-ser .ser-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.page-ser-ser .ser-list .item {
+    background-color: var(--color-bg-dark);
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.page-ser-ser .ser-list .item i {
+    color: var(--main-color);
+    font-size: 40px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+.page-ser-ser .ser-list .item a {
+    color: var(--color-title);
+    font-weight: 600;
+    font-size: 23px;
+    display: inline-block;
+    transition: .3s ease;
+    margin-bottom: 10px;
+}
+.page-ser-ser .ser-list .item .text-content {
+    line-height: 22px;
+    font-size: 16px;
+}
+
+/* QUOTE - INFO */
+.page-ser-quote-info {
+    position: relative;
+    background-image: url(../imgs/ab-slogan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+.page-ser-quote-info .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 14;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.page-ser-quote-info .quote {
+    width: 50%;
+    padding-right: 30px;
+}
+.page-ser-quote-info .quote .title-small {
+    color: #fff;
+    margin-bottom: 15px;
+}
+.page-ser-quote-info .quote .title-big {
+    padding-right: 30px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.page-ser-quote-info .quote .info .item {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.page-ser-quote-info .quote .info .item:nth-child(2) {
+    border-top: 1px solid #ffffff72;
+    border-bottom: 1px solid #ffffff72;
+}
+.page-ser-quote-info .quote .info .content {
+    margin-left: 35px;
+}
+.page-ser-quote-info .quote .info .content h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.page-ser-quote-info .quote .info .item i {
+    color: #fff;
+    font-size: 35px;
+}
+.page-ser-quote-info .your-info {
+    width: 50%;
+}
+.page-ser-quote-info form {
+    background-color: var(--color-bg-light);
+    padding: 50px 60px;
+    border-radius: 10px;
+}
+.page-ser-quote-info form h3 {
+    color: var(--color-title);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.page-ser-quote-info form p {
+    margin-bottom: 25px;
+}
+.page-ser-quote-info form input {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    background-color: var(--color-bg-dark);
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: var(--color-title);
+}
+.page-ser-quote-info form textarea {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 17px;
+    color: var(--color-title);
+}
+.page-ser-quote-info form button {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 17px 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.page-ser-quote-info form button:hover {
+    opacity: 0.8;
+}
+
+/* SOLUTIONS */
+.page-ser-solutions {
+    padding: 100px 0;
+    background-color: var(--color-bg-dark);
+    text-align: center;
+}
+.page-ser-solutions .title-big {
+    padding: 0 250px;
+    margin-bottom: 50px;
+}
+.page-ser-solutions .solu-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.page-ser-solutions .solu-list .item {
+    background-color: var(--color-bg-light);
+    border-radius: 10px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: .3s ease;
+}
+.page-ser-solutions .solu-list .item:hover {
+    transform: translateY(-8px);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+}
+.page-ser-solutions .solu-list .item img {
+    width: 60px;
+}
+.page-ser-solutions .solu-list .item h3 {
+    color: var(--color-title);
+    font-weight: 600;
+    font-size: 24px;
+}

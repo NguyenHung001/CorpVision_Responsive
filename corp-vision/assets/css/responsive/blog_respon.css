@@ -1,0 +1,65 @@
+@media screen and (max-width: 1980px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 1240px) {
+      .container {
+        max-width: 960px;
+      }
+     
+  }
+  @media screen and (max-width: 990px) {
+      .container {
+          max-width: 720px;
+        }
+        .box-blog {
+          width: 100%;
+        }
+        .box-blog .bl-quote h2 {
+          font-size: 25px;
+        }
+        .bl-cus .avt img {
+          width: 160px;
+          height: 160px;
+        }
+        .box-cmt img {
+          width: 70px;
+          height: 70px;
+        }
+  }
+  @media screen and (max-width: 768px) {
+      .container {
+          width: 100%;
+          padding: 0 20px;
+        }
+        .box-blog .sing-post {
+          flex-direction: column;
+        }
+        .box-blog .sing-post img {
+          width: 100%;
+        }
+  }
+  @media screen and (max-width: 576px) {
+      .container {
+          max-width: 95%;
+          margin: 0 auto;
+        }
+    
+  }
+  @media screen and (max-width: 480px) {
+      .container {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .page-banner .title h3 {
+          font-size: 40px;
+        }
+
+  }

@@ -1,0 +1,68 @@
+<div class="container">
+  <nav>
+    <div class="hd-logo">
+      <a href="index.html">
+        <p class="logo">
+          <i class="fa-sharp fa-solid fa-align-right"></i>
+          <span>Corp Vision</span>
+        </p>
+        <p class="brand">Vision to your Future</p>
+      </a>
+    </div>
+    <div class="hd-menu" id="main-menu">
+      <ul class="hd-list-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUTS</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="hd-actions">
+      <i class="hd-search fa-solid fa-magnifying-glass fa-fw"></i>
+      <i class="hd-theme fa-regular fa-sun" id="icon-theme"></i>
+      <i class="fa-solid fa-bars" id="show-menu"></i>
+    </div>
+  </nav>
+</div>
+<script>
+
+      // CHANGE THEME
+  const iconTheme = document.getElementById("icon-theme");
+  const themeHtml = document.body;
+  iconTheme.onclick = function() {
+    iconTheme.classList.toggle("fa-sun");
+    iconTheme.classList.toggle("fa-moon");
+    themeHtml.classList.toggle("theme-light");
+  }
+
+
+  // SHOW MENU
+  var menuIcon = document.getElementById("show-menu");
+  var menu = document.getElementById("main-menu");
+  menuIcon.onclick = function () {
+    if (menu.style.display == "block") {
+      menu.style.display = "none";
+      menuIcon.classList.remove("fa-xmark");
+      themeHtml.style.overflow = "auto";
+                themeHtml.style.minHeight = "auto";
+    } else {
+      menu.style.display = "block";
+      menuIcon.classList.add("fa-xmark");
+      themeHtml.style.overflow = "hidden"; 
+      themeHtml.style.minHeight = "100vh"; 
+    }
+  };
+
+  // ACTIVE PAGE
+  const currentLocation = window.location.href;
+            const menuItems = document.querySelectorAll('.hd-list-menu a');
+            
+            menuItems.forEach(item => {
+                if (item.href === currentLocation) {
+                    item.classList.add('active');
+                }
+            });
+
+
+</script>
