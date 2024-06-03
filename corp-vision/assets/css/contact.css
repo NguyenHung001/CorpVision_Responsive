@@ -99,3 +99,8 @@ form .ct-btn button {
 form .ct-btn button:hover {
     opacity: .8;
 }
+p.contact-error {
+    color: red;
+    font-weight: 300;
+    font-size: 17px;
+}

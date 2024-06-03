@@ -160,7 +160,7 @@
     outline: none;
     background-color: var(--color-bg-dark);
     border: none;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-radius: 5px;
     font-size: 17px;
     color: var(--color-title);
@@ -188,6 +188,11 @@
 }
 .page-ser-quote-info form button:hover {
     opacity: 0.8;
+}
+.ser-error {
+    color: red;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 /* SOLUTIONS */

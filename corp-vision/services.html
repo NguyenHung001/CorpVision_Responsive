@@ -225,11 +225,14 @@
                         <h3>Lets talk about your project</h3>
                         <p class="text-content">We have made it easy for clients to reach us and get their solutions weaved</p>
                     </div>
-                    <input type="text" name="name" id="name" placeholder="Your Name*">
-                    <input type="email" name="email" id="email" placeholder="Email*">
-                    <textarea name="note" id="note" cols="30" rows="3" placeholder="Message"></textarea>
+                    <input id="ser-name" type="text" name="name"  placeholder="Your Name*" required>
+                    <p class="ser-error" id="error-name"></p>
+                    <input id="ser-email" type="email" name="email"  placeholder="Email*" required>
+                    <p class="ser-error" id="error-email"></p>
+                    <textarea id="ser-note" name="note" cols="30" rows="3" placeholder="Message" required></textarea>
+                    <p class="ser-error" id="error-note"></p>
                     <div class="btn">
-                        <button>Get Started</button>
+                        <button onclick="serSubmit(event)">Get Started</button>
                     </div>
                 </form>
             </div>
@@ -285,5 +288,56 @@
 
     <!-- MAIN -->
     <script src="./assets/js/main.js"></script>
+
+    <!-- VALID -->
+    <script>
+        serSubmit = (event) => {
+          event.preventDefault();
+  
+          let name = document.getElementById("ser-name").value;
+          let email = document.getElementById("ser-email").value;
+          let note = document.getElementById("ser-note").value;
+  
+          var filter =
+            /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  
+          let errorName = "";
+          let errorEmail = "";
+          let errorNote ="";
+          let countError = 0;
+  
+          if(name.length == 0) {
+              errorName =  "You have not entered your name !";
+              countError++;
+          }
+          if(note.length == 0) {
+              errorNote =  "You have not entered a note yet !";
+              countError++;
+          }
+          if(email.length == 0) {
+              errorEmail =  "You have not entered your email !";
+              countError++;
+          } else if(!filter.test(email)){
+              errorEmail = "Email address is not valid !";
+              countError++
+          }
+          
+
+          if(countError == 0) {
+            alert("Successfully !");
+            clearValue();
+          }
+          document.getElementById("error-name").innerHTML = errorName;
+          document.getElementById("error-email").innerHTML = errorEmail;
+          document.getElementById("error-note").innerHTML = errorNote;
+  
+        };
+        clearValue = ()=> {
+        document.getElementById("ser-name").value = "";
+         document.getElementById("ser-email").value = "";
+       document.getElementById("ser-note").value = "";
+
+      }
+      </script>
   </body>
 </html>

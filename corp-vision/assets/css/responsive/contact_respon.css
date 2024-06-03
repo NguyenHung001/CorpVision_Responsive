@@ -53,7 +53,11 @@
           max-width: 95%;
           margin: 0 auto;
         }
-      
+        form .your-info {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+          margin-bottom: 30px;
     
   }
   @media screen and (max-width: 480px) {
@@ -64,11 +68,7 @@
         .title-big {
           font-size: 30px;
         }
-        form .your-info {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          gap: 30px;
-          margin-bottom: 30px;
+        
       }
       .page-banner .title h3 {
         font-size: 40px;
