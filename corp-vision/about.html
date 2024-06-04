@@ -88,7 +88,7 @@
             <div class="main-btn">
               <a href="">Read More</a>
             </div>
-            <div class="play-vd">
+            <div id="open-vd" class="play-vd">
               <i class="fa-solid fa-play"></i>
             </div>
           </div>
@@ -303,6 +303,18 @@
         </div>
       </div>
     </section>
+    <!-- VIDEO MODAL -->
+    <div id="main-video">
+      <div class="wrapper">
+        <div class="box-video">
+          <video controls autoplay>
+            <source src="./assets/videos/TU Delft - Corporate Film 2018 'You'.mp4" type="audio/mpeg">
+          </video>
+          <i id="close-video" class="fa-solid fa-xmark"></i>
+
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer id="footer-placehoder"></footer>
@@ -326,5 +338,19 @@
 
     <!-- MAIN -->
     <script src="./assets/js/main.js"></script>
+
+    <!-- VIDEO MODAL -->
+    <script>
+      let videoModal = document.getElementById("main-video");
+      document.getElementById("open-vd").onclick = () => {
+        videoModal.style.display = "block";
+        document.body.classList.add('no-scroll');
+      }
+
+      document.getElementById("close-video").onclick = () =>{
+        videoModal.style.display = "none";
+        document.body.classList.remove('no-scroll');
+      }
+    </script>
   </body>
 </html>
