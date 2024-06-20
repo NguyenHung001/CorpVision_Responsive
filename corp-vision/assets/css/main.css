@@ -364,7 +364,7 @@
   transition: 0.4s ease-in-out;
 }
 .pj-item .pj-content p:first-child {
-  color: var(--color-title);
+  color: #fff;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -754,4 +754,15 @@ color: #5c51ff;
 .backtotop:hover {
   background-color: transparent;
   color: var(--main-color);
+}
+/* SCROLL */
+.show-content {
+  opacity: 0.4;
+  transform: translateY(160px);
+  transition: all 1s ease
+}
+
+.show-content.show {
+  opacity: 1;
+  transform: translateY(0);
 }

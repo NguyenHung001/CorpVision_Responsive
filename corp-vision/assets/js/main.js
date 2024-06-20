@@ -1,10 +1,8 @@
 // IMPORT FILE
 $(function () {
-  $("#header-placeholder").load("imports/header.html");
-  $("#footer-placehoder").load("imports/footer.html");
+  $("#header-placeholder").load("components/header.html");
+  $("#footer-placehoder").load("components/footer.html");
 });
-
-
 
 // SCROLL EVENT
 $(document).ready(function () {
@@ -15,37 +13,48 @@ $(document).ready(function () {
     } else {
       $("header").removeClass("sticky");
 
-      document.querySelector(".backtotop").style.opacity = "0"
+      document.querySelector(".backtotop").style.opacity = "0";
     }
   });
   $(".backtotop").click(function () {
     $("html, body").animate(
       {
         scrollTop: 0,
-      },2000
+      },
+      2000
     );
   });
 });
 
 // SLIDER
-let slideIndex = 0;
-showSlides();
+let slideIndex = 1;
+let slideInterval = setInterval(() => showSlides(slideIndex += 1), 5000); 
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("bn-item");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000);
+showSlides(slideIndex);
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("bn-item");
+
+    if (n > slides.length) { 
+        slideIndex = 1;
+    }
+    if (n < 1) { 
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
 }
+
 function btnSlide(n) {
-  showSlides((slideIndex += n));
+    clearInterval(slideInterval); 
+    slideIndex += n;
+    showSlides(slideIndex);
+    slideInterval = setInterval(() => showSlides(slideIndex += 1), 5000); 
 }
 
 // CUSTOMER
@@ -56,3 +65,19 @@ $(".single-item").slick({
   pauseOnHover: false,
   pauseOnFocus: false,
 });
+
+// EVENT SCROLL
+const showContentOnScroll = () => {
+  const elements = document.querySelectorAll(".show-content");
+
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top >= 0 && rect.top <= windowHeight) {
+      element.classList.add("show");
+    }
+  });
+};
+window.addEventListener("scroll", showContentOnScroll);
